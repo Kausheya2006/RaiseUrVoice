@@ -29,5 +29,5 @@ Website link :- https://civilizedchaos.netlify.app
 
 **Overview of the page**
 
-![image](https://github.com/user-attachments/assets/a510cf01-46b7-47bb-86af-d5f402deb243)
+![image](public/ss.jpeg)
 
