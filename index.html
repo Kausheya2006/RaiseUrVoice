@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>RAISE YOUR VOICE</title>
+<meta charset="utf-8">
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.dropotron.js"></script>
+<script src="js/skel.min.js"></script>
+<script src="js/skel-panels.min.js"></script>
+<script src="js/init.js"></script>
+
+<link rel="stylesheet" href="css/skel-noscript.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style-noscript.css">
+
+
+<link rel="icon" href="images/logo.jpg  " type="image/x-icon">
+
+<style>
+#graph_report {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+#graph_report h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+</style>
+</head>
+<body class="homepage">
+<div id="header">
+  <div class="inner">
+    <header>
+      <h1><a href="#" id="logo">RAISE YOUR VOICE</a></h1>
+      <hr>
+      <span class="byline">The People's Power App for Fixing India's Flaws!
+      </span> </header>
+    <footer> <a href="#banner" class="button circled scrolly">Start</a> </footer>
+  </div>
+  <nav id="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="https://syntaxerror-hacknovare.onrender.com">Report Issue</a></li>
+      <li><a href="https://syntaxerror-hacknovare.onrender.com/view-reports">Trending Reports</a></li>
+      <li><a href="https://syntaxerror-hacknovare.onrender.com/view-authorities">Authorities</a></li>
+      <li><a href="https://syntaxerror-hacknovare.onrender.com/authorities-modify/login">Add or Modify Authority</a></li>
+    </ul>
+  </nav>
+</div>
+<div id="banner">
+  <h2>Living is everyone's <strong>rightful</strong> gift</h2>
+  <span class="byline">To live is not just a privilege—it's a birthright. Every soul deserves the chance to breathe freely, dream endlessly, and thrive fully</span>
+  <span class="byline"> RAISE YOUR VOICE is designed to address civic issues through community collaboration, transparency, and accountability, making urban and rural spaces safer and more efficient.
+  </span> </div>
+<div class="carousel">
+  <div class="reel">
+    <article> <a href="#" class="image featured"><img src="images/india_national_emblem.png" alt=""></a>
+      <header>
+        <h3><a href="#">Empowering Citizens, Enabling Change</a></h3>
+      </header>
+    </article>
+    <article> <a href="#" class="image featured"><img src="images/people_1.jpg" alt=""></a>
+      <header>
+        <h3><a href="#" >Bridging the Gap Between Citizens and Authorities </a></h3>
+      </header>
+
+    </article>
+    <article> <a href="#" class="image featured"><img src="images/people_protest_1.jpg" alt=""></a>
+      <header>
+        <h3><a href="#">Voice of the People: United for Change  </a></h3>
+      </header>
+    </article>
+    <article> <a href="#" class="image featured"><img src="images/authorities_help_1.jpg" alt=""></a>
+      <header>
+        <h3><a href="#">Compassion in Action: Lifting Lives</a></h3>
+      </header>
+    </article>
+    <article> <a href="#" class="image featured"><img src="images/garbage_road.jpg" alt=""></a>
+      <header>
+        <h3><a href="#">Street Scars: A Call for Cleanliness</a></h3>
+      </header>
+  
+    </article>
+    <article> <a href="#" class="image featured"><img src="images/existing authorities.jpg" alt=""></a>
+      <header>
+        <h3><a href="#">Government Initiatives: Empowering Communities, Transforming Lives</a></h3>
+      </header>
+      
+    </article>
+    <article> <a href="#" class="image featured"><img src="images/road_damage.jpg" alt=""></a>
+      <header>
+        <h3><a href="#">Steps on the Edge: Walking on Broken Paths</a></h3>
+      </header>
+    </article>
+    <article> <a href="#" class="image featured"><img src="images/water_clogging.jpg" alt=""></a>
+      <header>
+        <h3><a href="#">Paved with Neglect: Roads Turned into Muddy Traps</a></h3>
+      </header>
+    </article>
+  
+  </div>
+</div>
+<div class="wrapper style2">
+  <article id="main" class="container special"> <a href="#" class="image featured"><img src="images/RAISE YOUR VOICE_1.jpeg" alt=""></a>
+    <header>
+      <h2><a href="#">Report Your Problems Now</a></h2>
+      <span class="byline">Never back out whenever you see a problem</span> </header>
+    <footer> <a href="https://syntaxerror-hacknovare.onrender.com" class="button">Report Here</a> </footer>
+  </article>
+</div>
+
+<div id="graph_report">
+  <h2>Monthly Report Statistics</h2>
+    <canvas id="reportsChart"></canvas>
+  <hr>
+  <h2>See RealTime Statistics</h2>
+    <footer><a href="https://syntaxerror-hacknovare.onrender.com/graphical-analysis" class="button">Trending Reports Submission</a></footer>
+</div>
+<br>
+<div class="wrapper style1">
+  <section id="features" class="container special">
+    <header>
+      <h2><a href="">Local Authorities</a></h2>
+       </header>
+    <div class="row">
+      <article class="4u special"> <a href="#" class="image featured"><img src="images/pwd_dept.jpg" alt="" ></a>
+        <header>
+          <h3><a href="#">Public Works Department (PWD)</a></h3>
+        </header>
+        <p style="color: antiquewhite;"> Building and maintaining roads, bridges, and government buildings <br>
+          Ensuring safe and efficient transportation infrastructure <br>
+          Supporting disaster recovery efforts by restoring essential facilities</p>
+      </article>
+      <article class="4u special"> <a href="#" class="image featured"><img src="images/dda.jpg" alt=""  ></a>
+        <header>
+          <h3><a href="#">Development Authorities</a></h3>
+        </header>
+        <p style="color: antiquewhite;"> Urban planning and implementation of development projects <br>
+          Approving building plans and enforcing zoning regulations <br>
+          Managing land acquisition and allocation for public use</p>
+      </article>
+      <article class="4u special"> <a href="#" class="image featured"><img src="images/electricity_board.jpg" alt=""></a>
+        <header>
+          <h3><a href="#">Electricity Boards</a></h3>
+        </header>
+        <p style="color: antiquewhite;" > Ensuring uninterrupted power supply to urban and rural areas<br>
+          Addressing complaints about power outages and faulty meters<br>
+          Promoting renewable energy adoption and energy efficiency programs
+         </p>
+      </article>
+    </div>
+  </section>
+</div>
+
+
+
+<script>
+  // Sample data
+  const labels = ['December', 'January', 'February', 'March', 'April', 'May', 'June','July','August','September','October','November']; // X-axis labels
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'Reports Filed',
+      data: [0, 0, 0, 0, 0, 0, 0], 
+      backgroundColor: [
+        'rgba(54, 162, 235, 0.7)',
+        'rgba(75, 192, 192, 0.7)',
+        'rgba(255, 206, 86, 0.7)',
+        'rgba(153, 102, 255, 0.7)',
+        'rgba(255, 159, 64, 0.7)',
+        'rgba(201, 203, 207, 0.7)',
+        'rgba(99, 255, 132, 0.7)',
+      ],
+      borderColor: [
+        'rgba(54, 162, 235, 1)',
+        'rgba(75, 192, 192, 1)',
+        'rgba(255, 206, 86, 1)',
+        'rgba(153, 102, 255, 1)',
+        'rgba(255, 159, 64, 1)',
+        'rgba(201, 203, 207, 1)',
+        'rgba(99, 255, 132, 1)',
+      ],
+      borderWidth: 1
+    }]
+  };
+
+  // Configurations
+  const config = {
+    type: 'bar',
+    data: data,
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: 'top',
+          labels: {
+            color: '#ffffff' 
+          }
+        },
+        title: {
+          display: true,
+          text: 'Monthly Reports Filed',
+          color: '#ffffff'
+        }
+      },
+      scales: {
+        x: {
+          ticks: {
+            color: '#ffffff' 
+          },
+          grid: {
+            color: 'rgba(255, 255, 255, 0.1)' 
+          }
+        },
+        y: {
+          beginAtZero: true,
+          max: 1000, 
+          ticks: {
+            color: '#ffffff' 
+          },
+          grid: {
+            color: 'rgba(255, 255, 255, 0.1)' 
+          }
+        }
+      }
+    }
+  };
+
+
+  const reportsChart = new Chart(
+    document.getElementById('reportsChart'),
+    config
+  );
+
+ 
+  function updateChart(month, reportsFiled) {
+    const index = labels.indexOf(month);
+    if (index !== -1) {
+      data.datasets[0].data[index] = reportsFiled;
+    } else {
+      labels.push(month);
+      data.datasets[0].data.push(reportsFiled);
+    }
+    reportsChart.update();
+  }
+
+  
+  setTimeout(() => {
+    updateChart('December', 10); 
+  }, 1500); 
+
+  
+</script>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Government Login</title>
+  <style>
+    /* Global styles */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to right, #2c3e50, #4ca1af);
+      color: #ecf0f1;
+    }
+
+    .login-container {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 450px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+      color: #ffffff;
+    }
+
+    .login-container form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .login-container form input {
+      display: block;
+      width: 100%;
+      padding: 12px 15px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      background: rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      outline: none;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .login-container form input:focus {
+      background: rgba(255, 255, 255, 0.4);
+      box-shadow: 0 0 8px rgba(52, 152, 219, 0.8);
+    }
+
+    .login-container form input[type="submit"] {
+      background: #3498db;
+      color: #ffffff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .login-container form input[type="submit"]:hover {
+      background: #2980b9;
+      transform: scale(1.05);
+    }
+
+    .login-container form input::placeholder {
+      color: #ffffffa1;
+    }
+
+    .login-container p {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 0.9em;
+      color: #dcdcdc;
+    }
+
+    .login-container p a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .login-container p a:hover {
+      color: #2980b9;
+      text-decoration: underline;
+    }
+
+    /* Go Back button styling */
+    .go-back-btn {
+      background: #e74c3c;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 20px;
+      font-size: 1.1em;
+      width: 100%;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .go-back-btn:hover {
+      background: #c0392b;
+      transform: scale(1.05);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .login-container {
+        padding: 25px;
+      }
+
+      .login-container h2 {
+        font-size: 1.5em;
+      }
+
+      .go-back-btn {
+        font-size: 1.2em;
+        padding: 12px 18px;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+  <link rel="icon" href="../images/logo.jpg" type="image/x-icon">
+</head>
+
+<body>
+  <div class="login-container">
+    <h2>Government Login</h2>
+    <form action="/authorities-modify/login" method="POST">
+      <input type="text" name="id" placeholder="Government ID" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <input type="submit" value="Login" />
+    </form>
+    <p>Note for testing: ID = 1234 and Password = qwerty</p>
+    <button class="go-back-btn" onclick="window.location.href= '' ">Go Back</button>
+  </div>
+</body>
+</html>

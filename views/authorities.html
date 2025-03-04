@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authorities List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #2c3e50, #4ca1af);
+      color: #ffffff;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #ffffff;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background: #34495e;
+    }
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #7f8c8d;
+    }
+    th {
+      background: #2c3e50;
+      color: #ecf0f1;
+    }
+    tr:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  
+    @media (max-width: 768px) {
+      table {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+  <link rel="icon" href="../images/logo.jpg  " type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <h1>Authorities List</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Contact Email</th>
+          <th>Honour Score</th>
+        </tr>
+      </thead>
+      <tbody id="authorities-table-body">
+        <!-- Data will be populated here dynamically -->
+      </tbody>
+    </table>
+    <<a href="https://civilizedchaos.netlify.app/" class="btn">Back to Home</a>
+
+  <style>
+  .btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+
+  @media (max-width: 768px) {
+    .btn {
+      width: 100%;
+      padding: 15px 30px;
+      font-size: 1.1rem;
+    }
+  }
+  </style>
+
+  </div>
+  <script>
+    // Fetch data from the server and populate the table
+    fetch('/authorities')
+      .then(response => response.json())
+      .then(data => {
+        const tableBody = document.getElementById('authorities-table-body');
+        data.forEach(authority => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td>${authority.name}</td>
+            <td>${authority.email}</td>
+            <td>${authority.honourScore}</td>
+          `;
+          tableBody.appendChild(row);
+        });
+      })
+      .catch(err => console.error('Error fetching authorities:', err));
+  </script>
+</body>
+</html>

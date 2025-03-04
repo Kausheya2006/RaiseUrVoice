@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Problem</title>
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" type="text/css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" type="text/css">
+<!--[if lte IE 8]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.dropotron.js"></script>
+<script src="../js/skel.min.js"></script>
+<script src="../js/skel-panels.min.js"></script>
+<script src="../js/init.js"></script>
+
+<link rel="stylesheet" href="css/skel-noscript.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style-noscript.css">
+
+<link rel="icon" href="css/images/logo.jpg" type="image/x-icon">
+</head>
+<body class="no-sidebar">
+  <!-- Header -->
+  <div id="header">
+    <div class="inner">
+      <header>
+        <h1><a href="#" id="logo">CIVILIZED CHAOS</a></h1>
+      </header>
+    </div>
+    <nav id="nav">
+      <ul>
+        <li><a href="https://civilizedchaos.netlify.app/index.html">Home</a></li>
+        <li><a href="https://civilizedchaos.netlify.app/about.html">About Us</a></li>
+        <li><a href="">Report Problem</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Form Section -->
+<!-- Form Section -->
+<div class="flex items-center justify-center py-10 bg-gray-900">
+    <div class="w-full max-w-2xl bg-gray-800 rounded-lg shadow-md p-6">
+      <h1 class="text-2xl font-bold text-gray-100 text-center mb-6">Report an Issue</h1>
+      <form action="/report" method="POST" enctype="multipart/form-data" class="space-y-6">
+        <!-- Name Field -->
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+            class="mt-1 block w-full rounded-lg bg-gray-700 text-gray-100 placeholder-gray-400 border border-gray-600 focus:ring-green-500 focus:border-green-500 transition duration-300 shadow-sm hover:shadow-lg"
+          />
+        </div>
+  
+        <!-- Phone Number Field -->
+        <div>
+          <label for="mobile" class="block text-sm font-medium text-gray-300 mb-1">Phone Number:</label>
+          <input
+            type="text"
+            id="mobile"
+            name="mobile"
+            placeholder="Your Phone Number"
+            required
+            class="mt-1 block w-full rounded-lg bg-gray-700 text-gray-100 placeholder-gray-400 border border-gray-600 focus:ring-green-500 focus:border-green-500 transition duration-300 shadow-sm hover:shadow-lg"
+          />
+        </div>
+        <!-- Aadhar Number Field -->
+        <div>
+          <label for="aadhar" class="block text-sm font-medium text-gray-300 mb-1">Aadhar Number:</label>
+          <input
+            type="text"
+            id="aadhar"
+            name="aadhar"
+            placeholder="Your Aadhar Number"
+            required
+            class="mt-1 block w-full rounded-lg bg-gray-700 text-gray-100 placeholder-gray-400 border border-gray-600 focus:ring-green-500 focus:border-green-500 transition duration-300 shadow-sm hover:shadow-lg"
+          />
+        </div>
+        <!-- Description Field -->
+        <div>
+          <label for="issue" class="block text-sm font-medium text-gray-300 mb-1">Description:</label>
+          <textarea
+            id="issue"
+            name="issue"
+            placeholder="Describe the issue"
+            required
+            class="mt-1 block w-full rounded-lg bg-gray-700 text-gray-100 placeholder-gray-400 border border-gray-600 focus:ring-green-500 focus:border-green-500 transition duration-300 shadow-sm hover:shadow-lg"
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="area" class="block text-sm font-medium text-gray-300 mb-1">Area :</label>
+          <textarea
+            id="area"
+            name="area"
+            placeholder="Enter the Area Name"
+            required
+            class="mt-1 block w-full rounded-lg bg-gray-700 text-gray-100 placeholder-gray-400 border border-gray-600 focus:ring-green-500 focus:border-green-500 transition duration-300 shadow-sm hover:shadow-lg"
+          ></textarea>
+        </div>
+  
+        <!-- Image Upload Field -->
+        <div>
+          <label for="images" class="block text-sm font-medium text-gray-300 mb-1">Upload Image:</label>
+          <input
+            type="file"
+            id="images"
+            name="images"
+            accept="image/*"
+            multiple
+            class="mt-1 block w-full text-gray-100 bg-gray-700 border border-gray-600 rounded-lg cursor-pointer shadow-sm file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-gray-600 file:text-gray-300 file:cursor-pointer hover:file:bg-green-500 hover:file:text-white transition duration-300"
+          />
+        </div>
+  
+        <!-- Submit Button -->
+        <button
+          type="submit"
+          class="w-full bg-green-500 text-gray-100 font-medium py-3 px-4 rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-400 transition duration-300 shadow-md hover:shadow-lg"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+  
+
+  <!-- Footer -->
+  <div id="footer">
+    <div class="container">
+      
+      <div class="row">
+        <div class="12u">
+          <section class="contact">
+            <header>
+              <h3>Never lower your voices!! </h3>
+            </header>
+            <p>Together, we turn voices into action and challenges into change. Civilized Chaos—empowering every citizen to build a better tomorrow, one step at a time..</p>
+            <ul class="icons">
+              <li><a href="#" class="icon icon-twitter"><span>Twitter</span></a></li>
+              <li><a href="#" class="icon icon-facebook"><span>Facebook</span></a></li>
+              <li><a href="#" class="icon icon-google-plus"><span>Google+</span></a></li>
+              <li><a href="#" class="icon icon-pinterest"><span>Pinterest</span></a></li>
+              <li><a href="#" class="icon icon-dribbble"><span>Dribbble</span></a></li>
+              <li><a href="#" class="icon icon-linkedin"><span>Linkedin</span></a></li>
+            </ul>
+          </section>
+          <div class="copyright">
+            <ul class="menu">
+              <li>&copy; 2025. All rights reserved.</li>
+              <li>Developed by <a href="">Syntax Error</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
