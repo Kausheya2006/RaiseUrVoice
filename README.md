@@ -1,6 +1,6 @@
-# Civilized Chaos
+# RaiseUrVoice
 
-**CIVILIZED CHAOS** is a web application designed to streamline issue reporting, authority management, and provide real-time insights with interactive graphs. This project offers a seamless way for citizens to report issues, view authorities, and access visual data analytics in a structured and responsive layout.
+**RaiseUrVoice** is a web application designed to streamline issue reporting, authority management, and provide real-time insights with interactive graphs. This project offers a seamless way for citizens to report issues, view authorities, and access visual data analytics in a structured and responsive layout.
 
 **For viewing the deployment**
 Website link :- https://civilizedchaos.netlify.app 
