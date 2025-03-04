@@ -102,7 +102,7 @@ app.get("/view-reports", async (req, res) => {
                 .join("")}
             </div>
             <div class="text-center mt-8">
-              <a href="https://civilizedchaos.netlify.app/" class="btn">Back to Home</a>
+              <a href="/" class="btn">Back to Home</a>
             </div>
           </div>
 
@@ -236,7 +236,7 @@ app.get("/graphical-analysis", async (req, res) => {
               </div>
             </div>
 
-            <a href="https://civilizedchaos.netlify.app" class="block mt-8 mx-auto text-center text-lg font-semibold bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition-all">
+            <a href="/" class="block mt-8 mx-auto text-center text-lg font-semibold bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition-all">
               Back to Home
             </a>
           </div>
@@ -497,7 +497,7 @@ app.get("/view-authorities", async (req, res) => {
                 .join("")}
             </div>
             <div class="text-center mt-8">
-              <a href="https://civilizedchaos.netlify.app/" class="btn">Back to Home</a>
+              <a href="/" class="btn">Back to Home</a>
             </div>
           </div>
           <style>
