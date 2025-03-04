@@ -24,10 +24,11 @@ Website link :- https://civilizedchaos.netlify.app
 ## Installation
 
 1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/Anubhab-Rakshit/syntaxerror-hacknovare.git
+   ```sh
+   git clone https://github.com/Kausheya2006/RaiseUrVoice.git
+   ```
 
 **Overview of the page**
 
-![image](https://github.com/user-attachments/assets/a510cf01-46b7-47bb-86af-d5f402deb243)
+![image](public/ss.jpeg)
 
